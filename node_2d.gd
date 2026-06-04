@@ -54,7 +54,7 @@ func _create_navigation_polygon() -> NavigationPolygon:
 		navigation_polygon.baking_rect = existing_navigation_polygon.baking_rect
 		navigation_polygon.baking_rect_offset = existing_navigation_polygon.baking_rect_offset
 
-	navigation_polygon.sample_partition_type = NavigationPolygon.SAMPLE_PARTITION_TRIANGULATE
+	navigation_polygon.sample_partition_type = NavigationPolygon.SAMPLE_PARTITION_CONVEX_PARTITION
 
 	return navigation_polygon
 
